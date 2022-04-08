@@ -1,4 +1,5 @@
 <?php 
+    session_start();
     include_once "config.php";
     $fname = mysqli_real_escape_string($conn, $_POST['fname']);
     $lname = mysqli_real_escape_string($conn, $_POST['lname']);
@@ -30,7 +31,7 @@
                         
                         $new_img_name = $time.$img_name; //Novo nome da imagem
 
-                        if(move_uploaded_file($tmp_name, 'img/'.$new_img_name)){ //Se a imagem for movida com sucesso para a pasta IMG
+                        if(move_uploaded_file($tmp_name, "img/".$new_img_name)){ //Se a imagem for movida com sucesso para a pasta IMG
                             $status = "Online agora"; //Status do usuário depois de logado
                             $random_id = rand(time(), 10000000); //Gerando um número aleatório para o id do usuário
     
