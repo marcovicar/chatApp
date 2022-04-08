@@ -16,12 +16,12 @@ continueBtn.onclick = () => {
                 if (xhr.status === 200) {
                     let data = xhr.response;
                     console.log(data);
-                    /*if (data == 'success') {
+                    if (data == 'success') {
                         location.href = "users.php";
                     } else {
                         errorText.textContent = data;
                         errorText.style.display = "block";
-                    }*/
+                    }
                 }
             }
         }
