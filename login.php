@@ -16,7 +16,7 @@
         <section class="form login">
             <header>DlyChat</header>
             <form action="#">
-                <div class="error-txt">Essa é uma mensagem de erro!</div>
+                <div class="error-txt"></div>
                 <div class="field input">
                     <label>Email</label>
                     <input type="text" name="email" placeholder="Digite o seu email">
@@ -30,11 +30,12 @@
                     <input type="submit" name="submit" value="Login">
                 </div>
             </form>
-            <div class="link">Ainda não possui uma conta? <a href="#">Crie agora!</a></div>
+            <div class="link">Ainda não possui uma conta? <a href="index.php">Crie agora!</a></div>
         </section>
     </div>
 
     <script src="javascript/pass-show-hide.js"></script>
+    <script src="javascript/login.js"></script>
 
 </body>
 

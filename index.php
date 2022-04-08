@@ -44,7 +44,7 @@
                     <input type="submit" name="submit" value="Continue para conversar">
                 </div>
             </form>
-            <div class="link">Já possui uma conta? <a href="#">Fazer Login</a></div>
+            <div class="link">Já possui uma conta? <a href="login.php">Fazer Login</a></div>
         </section>
     </div>
 
