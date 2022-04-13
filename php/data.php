@@ -16,6 +16,8 @@
         (strlen($result) > 28) ? $msg = substr($result, 0, 28).'...' : $msg = $result;
         //Adicionando 'você:' antes da mensagem se o usuário que está logado for o que enviou a mensagem
         ($outgoing_id == $row2['outgoing_msg_id']) ? $you = "Você: " : $you = "";
+        //Verificando se o usuário está online ou offline
+        ($row['status'] == "Offline") ? $offline = "offline" : $offline = "";
 
         $output .= ' <a href="chat.php?user_id=' .$row['unique_id']. '">
                     <div class="content">
@@ -25,7 +27,7 @@
                         <p>'. $you . $msg .'</p>
                     </div>
                     </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
+                    <div class="status-dot '.$offline.'"><i class="fas fa-circle"></i></div>
                     </a>';
     }
 
