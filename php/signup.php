@@ -34,10 +34,10 @@
                         if(move_uploaded_file($tmp_name, "../img/".$new_img_name)){ //Se a imagem for movida com sucesso para a pasta IMG
                             $status = "Online"; //Status do usuário depois de logado
                             $random_id = rand(time(), 10000000); //Gerando um número aleatório para o id do usuário
-    
+                            $encrypt_pass = md5($password); //Encriptando a senha do usuário
                             //Realizando a inserção dos dados do usuário no banco de dados
                             $sql2 = mysqli_query($conn, "INSERT INTO users (unique_id, fname, lname, email, password, img, status)
-                                                VALUES({$random_id}, '{$fname}', '{$lname}', '{$email}', '{$password}', '{$new_img_name}', '{$status}')");
+                                                VALUES({$random_id}, '{$fname}', '{$lname}', '{$email}', '{$encrypt_pass}', '{$new_img_name}', '{$status}')");
 
                             if($sql2){ //Se a inserção dos dados do usuário no banco de dados foi realizada com sucesso
                                 $sql3 = mysqli_query($conn, "SELECT * FROM users WHERE email = '{$email}'");
