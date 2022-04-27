@@ -5,19 +5,20 @@
                 OR incoming_msg_id = {$outgoing_id}) ORDER BY msg_id DESC LIMIT 1";
         $query2 = mysqli_query($conn, $sql2);
         $row2 = mysqli_fetch_assoc($query2);
-
-        if(mysqli_num_rows($query2) > 0){
-            $result = $row2['msg'];
-        }else{
-            $result = "Comece a conversar!";
-        }
-
+        (mysqli_num_rows($query2) > 0) ? $result = $row2['msg'] : $result = '<i>"Começe a conversar!"</i>';
         //Cortando a mensagem se ela for maior que 28 caracteres
         (strlen($result) > 28) ? $msg = substr($result, 0, 28).'...' : $msg = $result;
-        //Adicionando 'você:' antes da mensagem se o usuário que está logado for o que enviou a mensagem
-        ($outgoing_id == $row2['outgoing_msg_id']) ? $you = "Você: " : $you = "";
+
+        if(isset($row2['outgoing_msg_id'])){
+            ($outgoing_id == $row2['outgoing_msg_id']) ? $you = "Você: " : $you = "";
+        }else{
+            $you = "";
+        }
+
         //Verificando se o usuário está online ou offline
         ($row['status'] == "Offline") ? $offline = "offline" : $offline = "";
+        //Adicionando 'você:' antes da mensagem se o usuário que está logado for o que enviou a mensagem
+        ($outgoing_id == $row['unique_id']) ? $hid_me = "hide: " : $hid_me = "";
 
         $output .= ' <a href="chat.php?user_id=' .$row['unique_id']. '">
                     <div class="content">
