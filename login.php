@@ -10,15 +10,15 @@
     <div class="wrapper">
         <section class="form login">
             <header>DlyChat</header>
-            <form action="#">
+            <form action="#" method="POST">
                 <div class="error-txt"></div>
                 <div class="field input">
                     <label>Email</label>
-                    <input type="text" name="email" placeholder="Digite o seu email">
+                    <input type="text" name="email" placeholder="Digite o seu email" required>
                 </div>
                 <div class="field input">
                     <label>Senha</label>
-                    <input type="password" name="password" placeholder="Digite uma senha">
+                    <input type="password" name="password" placeholder="Digite uma senha" required>
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field button">
