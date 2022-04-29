@@ -15,7 +15,6 @@
             if($user_pass === $enc_pass){
                 $status = "Online";
                 $sql2 = mysqli_query($conn, "UPDATE users SET status = '{$status}' WHERE unique_id = {$row['unique_id']}");
-                return $sql2;
                 if($sql2){
                     $_SESSION['unique_id'] = $row['unique_id']; //Usando a sessão, nós pegamos o unique_id do usuário no outro arquivo php 
                     echo "success";
