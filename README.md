@@ -6,7 +6,7 @@
 
 <h3>Technologies used:</h3>
 <ul>
-  <li>PHP</li>
+  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" height="40"/>PHP</li>
   <li>JavaScript</li>
   <li>CSS</li>
 </ul>
