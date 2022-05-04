@@ -4,15 +4,6 @@
 
 <i>I'm still working for fix some bugs and improve the application!</i>
 
-** HTML INSIDE THE README LOOKS LIKE DON'T WORKS **
+<h3>About:</h3>
 
-
-
-
-
-
-
-substituir o texto e incluir HTML para melhorar a visualização e facilitar o entendimento do codigo!
-
-Incluir imagens??????!
-Melhorar este readme com certeza!!!!
+<p>This project it's a Chat Application in Realtime, who helps the communication between differents peoples and cultures, providing an inclusion and shared experience </p>
