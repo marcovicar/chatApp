@@ -4,9 +4,9 @@
 
 <i>I'm still working for fix some bugs and improve the application!</i>
 
-<h3>Technologies used:</h3>
+<h3>Used Technologies:</h3>
 <ul>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" height="40"/>PHP</li>
+  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" height="40"/></li>
   <li>JavaScript</li>
   <li>CSS</li>
 </ul>
