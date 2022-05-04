@@ -7,8 +7,8 @@
 <h3>Used Technologies:</h3>
 <ul>
   <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" height="40"/></li>
-  <li>JavaScript</li>
-  <li>CSS</li>
+  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40"/></li>
+  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40"/>CSS</li>
 </ul>
 
 <h3>About:</h3>
