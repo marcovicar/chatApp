@@ -2,7 +2,7 @@
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
-I'm still working for fix some bugs and improve the application!
+<i>I'm still working for fix some bugs and improve the application!</i>
 
 ** HTML INSIDE THE README LOOKS LIKE DON'T WORKS **
 
