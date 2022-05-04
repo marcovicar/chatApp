@@ -4,6 +4,13 @@
 
 <i>I'm still working for fix some bugs and improve the application!</i>
 
+<h3>Technologies used:</h3>
+<ul>
+  <li>PHP</li>
+  <li>JavaScript</li>
+  <li>CSS</li>
+</ul>
+
 <h3>About:</h3>
 
 <p>This project it's a Chat Application in Realtime, who helps the communication between differents peoples and cultures, providing an inclusion and shared experience </p>
